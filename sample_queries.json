@@ -1,0 +1,7 @@
+[
+    {"query": "What are the key features of supervised learning?", "response": "Supervised learning involves training on labeled data to predict outcomes..."},
+    {"query": "Summarize the history of AI in 5 bullet points.", "response": "1. Early rule-based systems..."},
+    {"query": "Difference between supervised and unsupervised learning?", "response": "Supervised learning uses labeled data while unsupervised learning finds hidden patterns..."},
+    {"query": "Explain reinforcement learning in simple words.", "response": "Reinforcement learning teaches agents to take actions based on rewards..."},
+    {"query": "What is a neural network?", "response": "A neural network is a model inspired by the human brain..."}
+]
