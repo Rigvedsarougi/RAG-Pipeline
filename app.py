@@ -17,6 +17,11 @@ try:
 except:
     st.warning("No existing index found. Please upload documents.")
 
+import streamlit as st
+from document_processing import load_pdf, split_text, get_embeddings, vector_store
+
+st.title("RAG Pipeline")
+
 # Upload documents
 uploaded_file = st.file_uploader("Upload PDF Document", type=['pdf'])
 if uploaded_file is not None:
@@ -24,8 +29,7 @@ if uploaded_file is not None:
     chunks = split_text(text)
     embeddings = get_embeddings(chunks)
     vector_store.add_embeddings(embeddings, chunks)
-    vector_store.save()
-    st.success("Document processed and embeddings stored.")
+    st.success("Document processed and embeddings added!")
 
 # Handle queries
 query = st.text_input("Enter your query:")
